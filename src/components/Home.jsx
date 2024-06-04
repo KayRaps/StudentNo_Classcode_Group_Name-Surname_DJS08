@@ -10,4 +10,4 @@ export default function Home() {
                 <Link tp = "vans">Find your van</Link>
         </div>        
         )
-};
+}
