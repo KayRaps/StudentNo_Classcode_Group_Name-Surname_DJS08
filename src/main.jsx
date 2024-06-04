@@ -1,20 +1,10 @@
-import React from 'react';
+import React from 'react'; 
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import Home from "./pages/Home"
-import About from "./pages/About"
-
-function App() {
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/about" element={<About />}/>
-        </Routes>
-      </BrowserRouter>
-    )
-  }
+import App from './App.jsx'
 
 ReactDOM
-  .createRoot(document.getElementById('root'))
-  .render(<App />);
+  .createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  )
