@@ -14,11 +14,31 @@
  * linked in the slides.
  */
 
-function App() {
+// importReact from 'react'; 
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import Home from "./components/Home"
+import About from "./components/About"
 
-  return (
-    <h1>Start here</h1>
-  )
-}
+function App() {
+    return (
+      <BrowserRouter>
+      <header>
+        <Link className = "site-logo" to = "/">#VanLife</Link>
+        <nav>
+          <Link to = "/About"></Link>
+        </nav>
+      </header>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/about" element={<About />}/>
+        </Routes>
+      </BrowserRouter>
+    )
+  }
+
+ReactDOM
+  .createRoot(document.getElementById('root'))
+  .render(<App />);
 
 export default App
