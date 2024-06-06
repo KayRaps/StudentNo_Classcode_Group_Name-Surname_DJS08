@@ -9,6 +9,7 @@ import Dashboard from "./pages/Host/Dashboard"
 import Income from "./pages/Host/Income"
 import Reviews from "./pages/Host/Reviews"
 import Layout from "./components/Layout"
+import HostLayout from "./components/Layout"
 
 import "./server"
 
