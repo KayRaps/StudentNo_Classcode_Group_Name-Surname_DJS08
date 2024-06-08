@@ -1,4 +1,4 @@
-import React from "react"
+//import React from "react"
 import {Link} from "react-router-dom"
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
             <h1>You got the travel plans, we got the travel vans.</h1>
             <p>Add adventure to your life by joining the #vanlife movement. Rent the perfect van to
                 make your perfect road trip.</p>
-                <Link tp = "vans">Find your van</Link>
+                <Link to = "vans">Find your van</Link>
         </div>        
         )
 }
